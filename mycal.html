@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        function dis(val) 
+         { 
+             document.getElementById("id1").value+=val 
+         } 
+
+         function clr() 
+		{ 
+			document.getElementById("id1").value = "" 
+		}
+
+        function clrs() 
+		{ 
+			document.getElementById("id1").value = "hello" 
+		}
+
+        function solve() 
+		{ 
+			let x = document.getElementById("id1").value 
+			let y = eval(x) 
+			document.getElementById("id1").value = y 
+		} 
+        </script>
+    <style>
+        h1
+        {
+            color: yellow;
+            text-align: center;
+        }
+       button
+       {
+           border-color: tomato;
+       }
+       
+    </style>
+        <body>
+                <h1>Simple Caluculator</h1>
+                <div id="hell">
+            <input id="id1" type="text"/></br>
+                </div>
+                <br>
+<div class="class1">
+           <input type="button" value="7" onclick="dis('7')">
+            <input type="button" value="8" onclick="dis('8')"/>
+            <input type="button" value="9" onclick="dis('9')"/>
+            <input type="button" value="+" onclick="dis('+')"/>
+</div>
+</br>
+<div class="class2">
+        <input  type="button" value="4" onclick="dis('4')">
+        <input type="button" value="5" onclick="dis('5')"/>
+        <input type="button" value="6" onclick="dis('6')"/>
+        <input type="button" value="-" onclick="dis('-')"/>
+</div>
+<br>
+
+<div class="class3">
+        <input  type="button" value="1" onclick="dis('1')">
+            <input type="button" value="2" onclick="dis('2')"/>
+            <input type="button" value="3" onclick="dis('3')"/>
+            <input type="button" value="*" onclick="dis('*')"/>
+</div>
+<br>
+<div class="class4">
+        <input  type="button" value="=" onclick="solve()">
+        <input type="button" value="clear" onclick="clr()"/>
+        <input type="button" value="/" onclick="dis('/')"/>
+        <input type="button" value="$" onclick="clrs()"/>
+</div>
+        </body>
+    </head>
+</html>
